@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Transfer</string>
+    <string name="address">Address</string>
+    <string name="port">Port</string>
+    <string name="select">Select</string>
+    <string name="transfer">Transfer</string>
+    <string name="file">File</string>
+</resources>
