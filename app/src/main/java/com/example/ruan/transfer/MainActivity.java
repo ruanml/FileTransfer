@@ -29,6 +29,10 @@ import java.net.Socket;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
+import com.microsoft.appcenter.AppCenter; 
+import com.microsoft.appcenter.analytics.Analytics; 
+import com.microsoft.appcenter.crashes.Crashes;
+
 public class MainActivity extends AppCompatActivity {
     private static final String TAG = MainActivity.class.getSimpleName();
     private static final int REQUEST_CODE_FILE_PICKER = 101;
@@ -46,6 +50,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        AppCenter.start(getApplication(), "24812daa-3e80-45e6-b8b8-30f52716bbf0", Analytics.class, Crashes.class);
         initView();
     }
 
